@@ -8,11 +8,11 @@ this is a todo app for the console
 
 clone it
 
-    git clone https://github.com/olvap/todos.git ./todos
+    git clone https://github.com/olvap/todos.git ~/.todos
 
 add to your zshrc file
 
-    source "${HOME}/.todos/init.sh"
+    source "~/.todos/init.sh"
 
 
 ## Usage
