@@ -17,7 +17,7 @@ add to your zshrc file
 
 ## Usage
 
-t | list all the todos
-t task_name | if exits then show else create it
-t -e task_name | open task on editor
-t -d task_name | delete (done) task
+- t | list all the todos
+- t task_name | if exits then show else create it
+- t -e task_name | open task on editor
+- t -d task_name | delete (done) task
