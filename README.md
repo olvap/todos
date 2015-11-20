@@ -12,7 +12,7 @@ clone it
 
 add to your zshrc file
 
-    source "~/.todos/init.sh"
+    source ~/.todos/init.sh
 
 
 ## Usage
