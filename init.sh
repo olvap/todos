@@ -7,13 +7,15 @@ _t(){
   _files -W "$TODOS"/
 }
 
+compdef _t t
+
 t() {
   edit(){
     $EDITOR "$1"
   }
 
   delete(){
-    rm "$1"
+    rm "$1" -r
   }
 
   all(){
@@ -38,12 +40,11 @@ t() {
   }
 
   analize_options(){
-    file_name="$TODOS"/"$2"
-    while getopts ed opt
+    while getopts e:d: opt
     do
       case "$opt" in
-        e) edit $file_name;;
-        d) delete $file_name;;
+        e) edit "$TODOS"/"$OPTARG";;
+        d) delete "$TODOS"/"$OPTARG";;
       esac
     done
   }
