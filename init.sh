@@ -17,7 +17,11 @@ t() {
   }
 
   all(){
-    ls "$TODOS" -1
+    if hash tree 2>/dev/null; then
+      tree "$TODOS" --dirsfirst
+    else
+      ls "$TODOS" -1
+    fi
   }
 
   show(){
