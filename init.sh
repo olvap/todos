@@ -1,5 +1,3 @@
-export TODOS="${HOME}/.todos/todos"
-
 _t(){
   _arguments -s : \
     '-e[Open editor.]' \

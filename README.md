@@ -12,8 +12,9 @@ clone it
 
 add to your zshrc file
 
-    source ~/.todos/init.sh
+    export TODOS="${HOME}/todos" # this is where the todos will be save
 
+    source ~/.todos/init.sh
 
 ## Usage
 
